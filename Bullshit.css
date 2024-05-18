@@ -1,0 +1,1253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Start */
+
+.navbar {
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  transition: top 0.3s;
+}
+
+.brand-logo {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.brand-logo span {
+  color: #ff6c3f;
+}
+
+.navbar-nav a {
+  color: #fff;
+  font-size: 1.6rem;
+  margin: 0 0.6rem;
+  display: inline-block;
+}
+
+.navbar-nav a:hover {
+  color: #ff6c3f;
+}
+
+.navbar-nav a::after {
+  content: "";
+  border-bottom: 0.1rem solid #ff6c3f;
+  padding-bottom: 0.2rem;
+  display: block;
+  transform: scaleX(0);
+  transition: 0.2s;
+}
+
+.navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: white;
+  margin: 0 0.4rem;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Navbar End */
+
+.navbar .search-form {
+  position: absolute;
+  top: 30%;
+  right: 9%;
+  background-color: white;
+  width: 18rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: 0.3s;
+  border-radius: 100%;
+}
+
+.navbar .search-form.active {
+  transform: scaleX(1);
+}
+
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font: 1.6rem;
+  color: black;
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: #000;
+}
+
+/* Navbar search form end */
+
+.container {
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 8rem;
+  padding: 0 3.5rem;
+  width: 61%;
+  margin-left: 25rem;
+}
+
+.card-catalog {
+  border: 1px solid;
+  box-sizing: border-box;
+  background-color: rgba(248, 88, 88, 0.719);
+  display: flex;
+  justify-content: center;
+}
+
+.card-catalog p {
+  font-size: 3rem;
+  color: #000;
+  padding-top: 15rem;
+}
+
+.slide {
+  display: flex;
+  width: 53.8%;
+  margin-left: 26.5rem;
+}
+
+.card {
+  border: 1px solid black;
+  box-sizing: border-box;
+  height: 15rem;
+}
+
+.card .card-body p {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-custom {
+  border: 1px solid black;
+  box-sizing: border-box;
+  height: 18.7rem;
+  background-color: #ffd620;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.card-custom p {
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+  padding-top: 5rem;
+}
+
+.card-custom .card-body img {
+  width: 100%;
+}
+
+.keterangan {
+  width: 54.8%;
+  margin-left: 26.5rem;
+  height: 70vh;
+}
+
+.keterangan .card-catalog1 {
+  border: 1px solid;
+  box-sizing: border-box;
+  height: 67vh;
+  display: flex;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.keterangan .card-catalog1 p {
+  font-size: 5rem;
+  color: #000;
+}
+.keterangan .card-catalog1 h1 {
+  font-size: 2rem;
+  color: #000;
+  padding-top: 1rem;
+}
+
+.keterangan .card-catalog1 .pesan {
+  margin-top: 2rem;
+  width: 40rem;
+  border: 1px solid black;
+  height: 5rem;
+  background-color: #ff6c3f;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.keterangan .card-catalog1 .pesan a {
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* footer */
+.credit {
+  background-color: #000;
+  text-align: center;
+}
+
+.credit p {
+  color: white;
+  padding: 0.6rem 0;
+}
+/* footer end */
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+
+  .hero {
+    background-position: center;
+  }
+
+  .hero .content p {
+    color: #cfcece;
+  }
+
+  .box .container .row img {
+    width: 40vw;
+    padding: 1.5rem 0;
+  }
+
+  .box .container .row h2 {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  .box .container .row h3 {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  .box .container .box-card h2 {
+    font-size: 2rem;
+    padding: 2rem;
+    font-weight: 400;
+  }
+
+  .box .container .box-card h3 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .box .container .box-card .card {
+    min-width: 33vw;
+    height: 45vh;
+  }
+
+  .box .container .box-card .card img {
+    min-width: 25vw;
+  }
+
+  .box .container {
+    margin-top: 9rem;
+  }
+}
+
+@media screen and (max-width: 1343px) {
+  .container-row {
+    padding-left: 0.6rem;
+  }
+
+  .container-row .card {
+    margin-left: 0.7rem;
+  }
+}
+
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .brand-logo {
+    color: #fff;
+    font-size: 3rem;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    transition: 0.5s;
+    height: 18vh;
+    border-radius: 0.5rem;
+  }
+
+  .navbar .navbar-nav.active {
+    right: -10%;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .box {
+    padding: 0.4rem 10%;
+  }
+
+  .container {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #fff;
+  }
+
+  .card-catalog {
+    height: 40vh;
+    background-color: #fff;
+    margin: 2rem;
+  }
+
+  .container .card-catalog .card-body {
+    width: 95%;
+    background-color: white;
+  }
+
+  .container .card-catalog .card-body p {
+    font-size: 5rem;
+    padding-top: 1rem;
+  }
+
+  .container .slide {
+    display: flex;
+    width: 100%;
+    height: 25vh;
+  }
+
+  .container .card-custom {
+    height: 25rem;
+    margin: 2.5rem;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .text h1 {
+    margin-left: 28rem;
+  }
+
+  .container-row {
+    margin-left: 2rem;
+  }
+
+  .container-row .card {
+    margin-bottom: 3rem;
+    margin-left: 2.2rem;
+  }
+
+  .container-row .card-body {
+    margin-top: 18rem;
+  }
+
+  .keterangan {
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  .keterangan .card-catalog1 {
+    height: 30rem;
+    margin: 2rem;
+    background-color: #fff;
+  }
+
+  .container .card-catalog1 .card-body {
+    width: 95%;
+    background-color: white;
+  }
+
+  .container .card-catalog1 .card-body p {
+    text-align: center;
+    margin-top: -13rem;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 414px) {
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 20vh;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+  .card-body-utama img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slide {
+    width: 95%;
+    display: flex;
+    margin-left: 0rem;
+  }
+
+  .slide .card-custom .card-body img {
+    width: 100%;
+  }
+
+  .slide .card-custom {
+    height: 12rem;
+  }
+
+  .card-catalog1 .card-body .card-text h1 {
+    padding: 2rem 2rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .slide .card-custom .card-body img {
+    width: 100%;
+    height: 13.8rem;
+  }
+
+  .card-catalog .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 27rem;
+    margin-left: -38rem;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 2px 0;
+    user-select: none;
+    background-color: black;
+  }
+
+  .next {
+    right: 2.3rem;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .keterangan {
+    width: 95%;
+    margin-left: -0.5rem;
+    margin-top: -8rem;
+  }
+
+  .keterangan .card-catalog1 {
+    height: 35rem;
+    margin-left: 3rem;
+  }
+
+  .card-text p {
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .pesan {
+    border: 1px solid #000;
+    background-color: #ff6c3f;
+    width: 80vw;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 4rem;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 20vh;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+
+  .card-catalog {
+    margin: 1rem;
+  }
+  .card-catalog .card-body-utama {
+    width: 100%;
+  }
+  .card-body-utama img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 28rem;
+    margin-left: -39.8rem;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 2px 0;
+    user-select: none;
+    background-color: black;
+  }
+
+  .next {
+    right: 2.4rem;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .slide .card-custom .card-body img {
+    width: 100%;
+  }
+
+  .container {
+    margin-left: 0;
+  }
+
+  .keterangan {
+    margin-top: -2rem;
+    margin-left: -1rem;
+    height: 40rem;
+  }
+
+  .slide {
+    width: 95%;
+    display: flex;
+    margin-left: 0rem;
+    height: 17rem;
+  }
+
+  .keterangan .card-catalog1 {
+    height: 38rem;
+  }
+
+  .card-catalog1 .card-body .card-text p {
+    font-size: 3rem;
+  }
+
+  .keterangan .card-catalog1 .pesan {
+    border: 1px solid #000;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 5px;
+    width: 20rem;
+    margin-left: 7rem;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  .slide .card-custom {
+    height: 14rem;
+  }
+
+  .slide {
+    width: 95%;
+    display: flex;
+    margin-left: 0rem;
+  }
+
+  slide .card-custom .card-body img {
+    width: 100%;
+  }
+
+  .slide .card-custom {
+    height: 14rem;
+  }
+
+  .card-catalog1 .card-body .card-text h1 {
+    padding: 2rem 2rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .card-text {
+    margin-bottom: 1.5rem;
+  }
+
+  .card-text p {
+    text-align: center;
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 20vh;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+
+  .card-body-utama img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slide {
+    width: 95%;
+    display: flex;
+    margin-left: 0rem;
+    height: 15rem;
+  }
+
+  .slide .card-custom .card-body img {
+    width: 100%;
+  }
+
+  .slide .card-custom {
+    height: 14rem;
+  }
+
+  .card-catalog1 .card-body .card-text h1 {
+    padding: 2rem 2rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .card-catalog .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 25rem;
+    margin-left: -37.6rem;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 2px 0;
+    user-select: none;
+    background-color: black;
+  }
+
+  .next {
+    right: 2.4rem;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .keterangan {
+    margin: 0;
+    padding: 0;
+    height: 43rem;
+  }
+
+  .keterangan .card-catalog1 {
+    height: 40rem;
+    margin-left: 2rem;
+  }
+
+  .card-text {
+    margin-bottom: 4rem;
+  }
+
+  .card-text p {
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .pesan {
+    border: 1px solid #000;
+    background-color: #ff6c3f;
+    width: 80vw;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    margin-left: 0;
+  }
+
+  .keterangan {
+    margin-top: -2rem;
+    margin-left: -1rem;
+    height: 43rem;
+  }
+
+  .slide {
+    width: 95%;
+    display: flex;
+    margin-left: 0rem;
+    height: 14rem;
+  }
+
+  .keterangan .card-catalog1 {
+    height: 40rem;
+    margin-left: 2rem;
+  }
+
+  .card-catalog1 .card-body .card-text p {
+    font-size: 3rem;
+  }
+
+  .keterangan .card-catalog1 .pesan {
+    border: 1px solid #000;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 5px;
+    width: 20rem;
+    margin-left: 7rem;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  .keterangan .card-catalog1 .card-body {
+    margin-left: -1rem;
+  }
+
+  .card-body-utama img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slide {
+    width: 95%;
+    display: flex;
+    margin-left: 0rem;
+  }
+
+  .card-catalog1 .card-body .card-text h1 {
+    padding: 2rem 2rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .slide .card-custom .card-body {
+    height: 12.2rem;
+  }
+
+  .slide .card-custom .card-body img {
+    height: 100%;
+  }
+
+  .card-catalog {
+    height: 40rem;
+    margin-top: -1rem;
+  }
+
+  .card-catalog .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 25rem;
+    margin-left: -35.2rem;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 2px 0;
+    user-select: none;
+    background-color: black;
+  }
+
+  .next {
+    right: 2.2rem;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .keterangan {
+    margin: 0;
+    padding: 0;
+  }
+
+  .slide .card-custom {
+    height: 12.4rem;
+  }
+
+  .card-text {
+    margin-bottom: 4rem;
+  }
+
+  .card-text p {
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .pesan {
+    border: 1px solid #000;
+    background-color: #ff6c3f;
+    width: 80vw;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  container {
+    margin-left: 0;
+  }
+
+  .keterangan {
+    margin-top: -2rem;
+    margin-left: -1rem;
+    height: 43rem;
+  }
+
+  .slide {
+    width: 95%;
+    display: flex;
+    margin-left: 0rem;
+    height: 15rem;
+  }
+
+  .keterangan .card-catalog1 {
+    height: 40rem;
+    margin-left: 3rem;
+  }
+
+  .card-catalog1 .card-body .card-text p {
+    font-size: 3rem;
+  }
+
+  .keterangan .card-catalog1 .pesan {
+    border: 1px solid #000;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 5px;
+    width: 20rem;
+    margin-left: 7rem;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  .card-catalog1 .card-body .card-text h1 {
+    padding: 2rem 2rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .slide .card-custom {
+    height: 11.8rem;
+  }
+
+  .card-text {
+    margin-bottom: 4rem;
+  }
+
+  .card-text p {
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .keterangan .card-catalog1 .pesan {
+    border: 1px solid #000;
+    background-color: #ff6c3f;
+    width: 60vw;
+    margin-left: 4rem;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  .slide .card-custom {
+    height: 12.5rem;
+  }
+
+  .slide .card-custom .card-body img {
+    height: 100%;
+  }
+
+  .card-catalog {
+    height: 40rem;
+    margin-top: -1rem;
+  }
+
+  .card-catalog .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 25rem;
+    margin-left: -33.8rem;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 2px 0;
+    user-select: none;
+    background-color: black;
+  }
+
+  .next {
+    right: 2.2rem;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    margin-left: 0;
+  }
+
+  .keterangan {
+    margin-top: -2rem;
+    margin-left: -1rem;
+    height: 43rem;
+  }
+  .slide {
+    width: 95%;
+    display: flex;
+    margin-left: 0rem;
+  }
+
+  .keterangan .card-catalog1 {
+    height: 40rem;
+    margin-left: 2rem;
+    margin-top: -0.6rem;
+  }
+
+  .card-catalog1 .card-body .card-text p {
+    font-size: 3rem;
+  }
+
+  .keterangan .card-catalog1 .pesan {
+    border: 1px solid #000;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 5px;
+    width: 20rem;
+    margin-left: 7rem;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  .card-catalog1 .card-body .card-text h1 {
+    padding: 2rem 2rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  .keterangan {
+    margin: 0;
+    padding: 0;
+  }
+
+  .slide .card-custom {
+    height: 11.8rem;
+  }
+
+  .card-text {
+    margin-bottom: 4rem;
+  }
+
+  .card-text p {
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .slide .card-custom .card-body {
+    height: 11.5rem;
+  }
+
+  .slide .card-custom .card-body img {
+    height: 100%;
+  }
+
+  .card-catalog {
+    height: 40rem;
+    margin-top: -1rem;
+  }
+
+  .card-catalog .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 25rem;
+    margin-left: -32rem;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 2px 0;
+    user-select: none;
+    background-color: black;
+  }
+
+  .next {
+    right: 2.2rem;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: white;
+    color: black;
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Satan.css" />
+    <!-- Icon feather -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Icon feather -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Salsa&display=swap" rel="stylesheet" />
+    <!-- Fonts -->
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="Belanja.html" class="brand-logo">Kick-<span>Off</span></a>
+
+      <div class="navbar-nav">
+        <ul>
+          <li>
+            <a href="Home.html">Home</a>
+            <a href="Belanja.html">Belanja</a>
+            <!-- <a href="About.html">Tentang Kami</a> -->
+            <a href="Contact.html">Kontak Kami</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <!-- <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a> -->
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- search form -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <!-- <label for="search-box"><i data-feather="search"></i></label> -->
+      </div>
+      <!-- search form -->
+    </nav>
+    <!-- Navbar End -->
+
+    <section class="container">
+      <div class="card-catalog" style="width: 95%">
+        <div class="card-body-utama">
+          <img src="img/selektion/satan.jpg" alt="" />
+        </div>
+        <div class="card-body-utama">
+          <img src="img/slide/kaos depan polos.jpg" alt="" />
+        </div>
+        <div class="card-body-utama">
+          <img src="img/slide/satan.jpg" alt="" />
+        </div>
+        <!-- <a class="prev" onclick="nextslide(-1)">&#10094;</a>
+        <a class="next" onclick="nextslide(1)">&#10095;</a> -->
+      </div>
+    </section>
+    <div class="slide">
+      <div class="card-custom" style="width: 90rem">
+        <div class="card-body" onclick="dotslide(1)">
+          <img src="img/selektion/satan.jpg" alt="" />
+        </div>
+      </div>
+      <div class="card-custom" style="width: 90rem">
+        <div class="card-body" onclick="dotslide(2)">
+          <img src="img/slide/kaos depan polos.jpg" alt="" />
+        </div>
+      </div>
+      <div class="card-custom" style="width: 90rem">
+        <div class="card-body" onclick="dotslide(3)">
+          <img src="img/slide/satan.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="keterangan">
+      <div class="card-catalog1" style="width: 95%">
+        <div class="card-body">
+          <div class="card-text">
+            <p>- Fvck Satan -</p>
+            <h1>Kaos : New State Apparel 24's</h1>
+            <h1>Size : S/M/L/XL/XXL</h1>
+            <h1>Jenis Sablon : DTG</h1>
+            <h1>Image Size : A3</h1>
+          </div>
+          <div class="pesan">
+            <a href="https://api.whatsapp.com/send?phone=62895326192302&text=Hi,%20Admin.%0ASaya tertarik%20untuk%20membeli%20Produk%20Satan.%0ABoleh%20tanya-tanya%20dulu?">Pesan Sekarang</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="credit">
+        <p>Clothing One | &copy; 2023.</p>
+      </div>
+    </footer>
+    <!-- footer end-->
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

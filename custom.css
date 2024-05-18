@@ -1,0 +1,1293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Start */
+
+.navbar {
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  transition: top 0.3s;
+}
+
+.brand-logo {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.brand-logo span {
+  color: #ff6c3f;
+}
+
+.navbar-nav a {
+  color: #fff;
+  font-size: 1.6rem;
+  margin: 0 0.6rem;
+  display: inline-block;
+}
+
+.navbar-nav a:hover {
+  color: #ff6c3f;
+}
+
+.navbar-nav a::after {
+  content: "";
+  border-bottom: 0.1rem solid #ff6c3f;
+  padding-bottom: 0.2rem;
+  display: block;
+  transform: scaleX(0);
+  transition: 0.2s;
+}
+
+.navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: white;
+  margin: 0 0.4rem;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Navbar End */
+
+.navbar .search-form {
+  position: absolute;
+  top: 30%;
+  right: 9%;
+  background-color: white;
+  width: 18rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: 0.3s;
+  border-radius: 100%;
+}
+
+.navbar .search-form.active {
+  transform: scaleX(1);
+}
+
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font: 1.6rem;
+  color: black;
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: #000;
+}
+
+/* Navbar search form end */
+
+.container {
+  display: flex;
+  height: 100%;
+  margin-top: 8rem;
+  margin-left: 5.8rem;
+}
+
+.container .box {
+  width: 30%;
+  border: 1px solid black;
+  height: 25.1rem;
+}
+
+.container .box img {
+  width: 100%;
+}
+
+.box-2 {
+  width: 30%;
+  margin-left: 3rem;
+}
+
+.list-baju {
+  display: flex;
+  margin-left: 1rem;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 7.6rem;
+  border: 1px solid black;
+  box-sizing: border-box;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.baju {
+  margin: 0.3rem 0.5rem;
+  height: 3rem;
+  background-color: #cfcece;
+  border: none;
+  width: 1rem;
+  height: 1rem;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.list-baju .baju img {
+  width: 100%;
+}
+
+.ukuran {
+  display: block;
+  width: 90%;
+  margin: 1rem;
+}
+
+.ukuran p {
+  text-align: center;
+  color: white;
+  width: 100%;
+  background-color: #000;
+}
+
+.ukuran table {
+  border: 1px solid black;
+  width: 100%;
+  padding-top: 0.5rem;
+}
+
+.ukuran table tr {
+  text-align: center;
+}
+
+.ukuran table tr td {
+  padding: 0.2rem;
+}
+
+.detail {
+  margin-left: 3rem;
+  width: 30%;
+  height: 25rem;
+  border: 1px solid black;
+}
+
+.detail p {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.syarat {
+  width: 95%;
+}
+
+.syarat h1 {
+  margin-left: 3rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.pesan {
+  margin-left: 6rem;
+  width: 50%;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  background-color: #ff6c3f;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.pesan a {
+  color: white;
+}
+
+/* footer */
+
+.credit {
+  background-color: #000;
+  text-align: center;
+  bottom: 0;
+  margin-top: 3.2rem;
+}
+
+.credit p {
+  color: white;
+  padding: 0.6rem 0;
+}
+
+/* footer end */
+
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    height: 100%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 20vh;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+  /* Navbar search form end */
+
+  .container {
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+
+  .container .box {
+    margin-top: 9rem;
+    margin-left: 5.8rem;
+    width: 38rem;
+    height: 40rem;
+  }
+
+  .container .box img {
+    width: 100%;
+  }
+
+  .box-2 {
+    border: none;
+    width: 80%;
+    margin: 5rem;
+    height: 43rem;
+    margin-top: 2rem;
+  }
+
+  .list-baju {
+    margin-top: 1rem;
+    width: 97%;
+    height: 14rem;
+    margin-left: 0.6rem;
+    padding: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    border: none;
+    justify-content: left;
+    cursor: none;
+  }
+
+  .list-baju .baju {
+    min-width: 11.2rem;
+    height: 11.2rem;
+  }
+
+  .list-baju .baju img {
+    width: 100%;
+  }
+
+  .ukuran {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .ukuran p {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    color: white;
+    width: 100%;
+    background-color: #000;
+  }
+
+  .ukuran table {
+    border: 1px solid black;
+    width: 100%;
+    height: 21rem;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+  }
+
+  .ukuran table tr {
+    text-align: center;
+  }
+
+  .ukuran table tr th {
+    text-align: center;
+    width: 3rem;
+  }
+
+  .ukuran table tr td {
+    padding: 0.2rem;
+  }
+
+  .list-baju::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .detail {
+    margin-top: 0rem;
+    width: 80%;
+    margin-left: 5rem;
+    height: 25rem;
+  }
+
+  .syarat {
+    width: 95%;
+  }
+
+  .syarat h1 {
+    margin-left: 3rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+
+  .pesan {
+    margin-left: 9rem;
+    width: 50%;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  .pesan a {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .credit {
+    margin-top: 50rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    height: 100%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 20vh;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+  /* Navbar search form end */
+
+  .container {
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+
+  .container .box {
+    margin-top: 9rem;
+    margin-left: 5rem;
+    width: 38rem;
+    height: 40rem;
+  }
+
+  .container .box img {
+    width: 100%;
+  }
+
+  .box-2 {
+    border: none;
+    width: 80%;
+    margin: 5rem;
+    height: 43rem;
+    margin-top: 2rem;
+  }
+
+  .list-baju {
+    margin-top: 1rem;
+    width: 97%;
+    height: 14rem;
+    margin-left: 0.6rem;
+    padding: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    border: none;
+    justify-content: left;
+    cursor: none;
+  }
+
+  .list-baju .baju {
+    min-width: 11.2rem;
+    height: 11.2rem;
+  }
+
+  .list-baju .baju img {
+    width: 100%;
+  }
+
+  .ukuran {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .ukuran p {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    color: white;
+    width: 100%;
+    background-color: #000;
+  }
+
+  .ukuran table {
+    border: 1px solid black;
+    width: 100%;
+    height: 21rem;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+  }
+
+  .ukuran table tr {
+    text-align: center;
+  }
+
+  .ukuran table tr th {
+    text-align: center;
+    width: 3rem;
+  }
+
+  .ukuran table tr td {
+    padding: 0.2rem;
+  }
+
+  .list-baju::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .detail {
+    margin-top: 0rem;
+    width: 80%;
+    margin-left: 5rem;
+    height: 25rem;
+  }
+
+  .syarat {
+    width: 95%;
+  }
+
+  .syarat h1 {
+    margin-left: 3rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+
+  .pesan {
+    margin-left: 9rem;
+    width: 50%;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  .pesan a {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .credit {
+    margin-top: 50rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 20vh;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+  /* Navbar search form end */
+
+  .container {
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+
+  .container .box {
+    margin-top: 9rem;
+    margin-left: 5.6rem;
+    width: 34.6rem;
+    height: 36.4rem;
+  }
+
+  .container .box img {
+    width: 100%;
+  }
+
+  .box-2 {
+    border: none;
+    width: 80%;
+    margin: 5rem;
+    height: 43rem;
+    margin-top: 2rem;
+  }
+
+  .list-baju {
+    margin-top: 1rem;
+    width: 97%;
+    height: 14rem;
+    margin-left: 0.6rem;
+    padding: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    border: none;
+    justify-content: left;
+    cursor: none;
+  }
+
+  .list-baju .baju {
+    min-width: 11.2rem;
+    height: 11.2rem;
+  }
+
+  .list-baju .baju img {
+    width: 100%;
+  }
+
+  .ukuran {
+    display: block;
+    width: 100%;
+    margin: 0;
+    border: 1px solid black;
+  }
+
+  .ukuran p {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    color: white;
+    width: 100%;
+    background-color: #000;
+  }
+
+  .ukuran table {
+    border: 0.5px solid black;
+    width: 100%;
+    height: 21rem;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+  }
+
+  .ukuran table tr {
+    text-align: center;
+  }
+
+  .ukuran table tr th {
+    text-align: center;
+    width: 3rem;
+  }
+
+  .ukuran table tr td {
+    padding: 0.2rem;
+  }
+
+  .list-baju::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .detail {
+    margin-top: 0rem;
+    width: 80%;
+    margin-left: 4.6rem;
+    height: 25rem;
+  }
+
+  .syarat {
+    width: 95%;
+  }
+
+  .syarat h1 {
+    margin-left: 3rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+
+  .pesan {
+    margin-left: 9rem;
+    width: 50%;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  .pesan a {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .credit {
+    margin-top: 50rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 25vh;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+  /* Navbar search form end */
+
+  .container {
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+
+  .container .box {
+    margin-top: 9rem;
+    margin-left: 5.6rem;
+    width: 33rem;
+    height: 35rem;
+  }
+
+  .container .box img {
+    width: 100%;
+  }
+
+  .box-2 {
+    border: none;
+    width: 80%;
+    margin: 5rem;
+    height: 43rem;
+    margin-top: 2rem;
+  }
+
+  .list-baju {
+    margin-top: 1rem;
+    width: 97%;
+    height: 14rem;
+    margin-left: 0.6rem;
+    padding: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    border: none;
+    justify-content: left;
+    cursor: none;
+  }
+
+  .list-baju .baju {
+    min-width: 11.2rem;
+    height: 11.2rem;
+  }
+
+  .list-baju .baju img {
+    width: 100%;
+  }
+
+  .ukuran {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .ukuran p {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    color: white;
+    width: 100%;
+    background-color: #000;
+  }
+
+  .ukuran table {
+    border: 1px solid black;
+    width: 100%;
+    height: 21rem;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+  }
+
+  .ukuran table tr {
+    text-align: center;
+  }
+
+  .ukuran table tr th {
+    text-align: center;
+    width: 3rem;
+  }
+
+  .ukuran table tr td {
+    padding: 0.2rem;
+  }
+
+  .list-baju::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .detail {
+    margin-top: 0rem;
+    width: 80%;
+    margin-left: 5rem;
+    height: 26rem;
+  }
+
+  .syarat {
+    width: 95%;
+  }
+
+  .syarat h1 {
+    margin-left: 3rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+
+  .pesan {
+    margin-left: 9rem;
+    width: 50%;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  .pesan a {
+    color: white;
+    font-size: 1.4rem;
+  }
+
+  .credit {
+    margin-top: 50rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    height: 100%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 20vh;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+  /* Navbar search form end */
+
+  .container {
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+
+  .container .box {
+    margin-top: 9rem;
+    margin-left: 4rem;
+    width: 33rem;
+    height: 34.8rem;
+  }
+
+  .container .box img {
+    width: 100%;
+  }
+
+  .box-2 {
+    border: none;
+    width: 80%;
+    margin: 5rem;
+    height: 46rem;
+    margin-top: 2rem;
+  }
+
+  .list-baju {
+    margin-top: 1rem;
+    width: 97%;
+    height: 14rem;
+    margin-left: -0.6rem;
+    padding: 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    border: none;
+    justify-content: left;
+    cursor: none;
+  }
+
+  .list-baju .baju {
+    min-width: 11.2rem;
+    height: 11.2rem;
+  }
+
+  .list-baju .baju img {
+    width: 100%;
+  }
+
+  .ukuran {
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-left: -1rem;
+  }
+
+  .ukuran p {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    color: white;
+    width: 100%;
+    background-color: #000;
+  }
+
+  .ukuran table {
+    border: none;
+    width: 100%;
+    height: 21rem;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .ukuran table tr {
+    text-align: center;
+  }
+
+  .ukuran table tr th {
+    text-align: center;
+    width: 10rem;
+  }
+
+  .ukuran table tr td {
+    padding: 0.2rem;
+  }
+
+  .list-baju::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .detail {
+    margin-top: 0rem;
+    width: 80%;
+    margin-left: 4rem;
+    height: 25rem;
+  }
+
+  .syarat {
+    width: 95%;
+  }
+
+  .syarat h1 {
+    margin-left: 3rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+
+  .pesan {
+    margin-left: 9rem;
+    width: 45%;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  .pesan a {
+    color: white;
+  }
+
+  footer .credit {
+    margin-top: 50rem;
+  }
+}

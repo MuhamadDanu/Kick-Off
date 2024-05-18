@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Start */
+
+.navbar {
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.brand-logo {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.brand-logo span {
+  color: #ff6c3f;
+}
+
+.navbar-nav a {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0 0.6rem;
+  display: inline-block;
+}
+
+.navbar-nav a:hover {
+  color: #ff6c3f;
+}
+
+.navbar-nav a::after {
+  content: "";
+  border-bottom: 0.1rem solid #ff6c3f;
+  padding-bottom: 0.2rem;
+  display: block;
+  transform: scaleX(0);
+  transition: 0.2s;
+}
+
+.navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: white;
+  margin: 0 0.4rem;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Navbar End */
+
+/* About */
+
+.about {
+  padding: 8rem 7% 1.4rem;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 4rem;
+  z-index: 99;
+}
+
+.about h2 span {
+  color: #ff6c3f;
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 4rem;
+}
+
+.about .row .about-img {
+  flex: 1 1 30rem;
+  margin-left: -1rem;
+}
+
+.about .row .about-img img {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-top: -1rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+}
+
+.about .row .order p {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+/* About section end */
+
+/* Media Queris */
+
+/* Laptop */
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+
+  .hero {
+    background-position: center;
+  }
+
+  .hero .content p {
+    color: #cfcece;
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+    height: 70vh;
+  }
+
+  .about .row .content {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+    display: block;
+    margin-top: -5rem;
+  }
+
+  .about h2 span {
+    color: #ff6c3f;
+  }
+
+  .about .row .order p {
+    font-weight: 800;
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .about .row .about-img {
+    display: block;
+    margin: -2rem;
+    margin-bottom: 2rem;
+    padding-left: 8rem;
+  }
+
+  .about .row .about-img img {
+    width: 90%;
+  }
+
+  .about h2 {
+    margin-top: 1rem;
+  }
+
+  .about .order {
+    height: 0vh;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .brand-logo {
+    color: #fff;
+    font-size: 3rem;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    transition: 0.5s;
+    height: 35vh;
+    border-radius: 0.5rem;
+  }
+
+  .navbar .navbar-nav.active {
+    right: -10%;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .about {
+    padding-top: 12rem;
+    height: 0;
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .content {
+    line-height: 2.8rem;
+    font-weight: 400;
+    margin-top: 2rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    width: 110%;
+  }
+
+  .about .row .order p {
+    font-size: 2rem;
+  }
+
+  .about .row .about-img {
+    padding-left: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .about .row .about-img img {
+    width: 80%;
+    display: block;
+    margin-bottom: -12rem;
+  }
+
+  .about h2 {
+    margin-top: 1rem;
+  }
+
+  .about .about.order {
+    height: 0;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    transition: 0.5s;
+    height: 100vh;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+}

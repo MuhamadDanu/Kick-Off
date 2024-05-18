@@ -1,0 +1,561 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 7%;
+  background-color: black;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar .brand-logo {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.navbar .brand-logo span {
+  color: #ff6c3f;
+}
+
+.navbar .navbar-nav a {
+  color: white;
+  font-size: 1.6rem;
+  margin: 0 0.6rem;
+  display: inline-block;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #ff6c3f;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  color: #ff6c3f;
+  display: block;
+  border-bottom: 0.1rem solid #ff6c3f;
+  padding-bottom: 0.2rem;
+  transform: scalex(0);
+  transition: 0.2s;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.4rem;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* Navbar search form */
+
+.navbar .search-form {
+  position: absolute;
+  top: 30%;
+  right: 9%;
+  background-color: white;
+  width: 18rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: 0.3s;
+  border-radius: 100%;
+}
+
+.navbar .search-form.active {
+  transform: scaleX(1);
+}
+
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font: 1.6rem;
+  color: black;
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: #000;
+}
+
+/* Navbar search form end */
+
+/* Kontak Start */
+
+.kontak {
+  padding: 0.6rem 7%;
+}
+
+.kontak h2 {
+  margin-top: 8rem;
+  color: #000;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.kontak .row {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.kontak .row .img-cs {
+  flex: 1 1 45rem;
+}
+
+.kontak .row .img-cs img {
+  width: 70%;
+  display: inline-block;
+  margin-top: -4rem;
+  margin-left: 8rem;
+}
+
+.kontak .row .box-img {
+  flex: 1 1 45rem;
+}
+
+.kontak .row .box-img .img-sm {
+  flex-direction: row;
+}
+
+.kontak .row .box-img .img-sm img {
+  width: 4rem;
+  margin-top: 2rem;
+}
+
+.kontak .row .box-img .img-sm .sosmed {
+  font-size: 3rem;
+  display: block;
+  padding-left: 8rem;
+  margin-top: -4.8rem;
+  color: black;
+}
+
+.kontak .row .box-img .img-sm .sosmed:hover {
+  color: #ff6c3f;
+}
+/* Kontak end */
+
+/* footer */
+.credit {
+  background-color: #000;
+  text-align: center;
+  bottom: 0;
+}
+
+.credit p {
+  color: white;
+  padding: 0.6rem 0;
+}
+/* footer end */
+
+/* Media Queris */
+
+/* Laptop */
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+
+  .kontak .row {
+    flex-wrap: wrap;
+  }
+
+  .kontak h2 {
+    display: block;
+    z-index: 9999;
+  }
+
+  .kontak .row .img-cs {
+    display: block;
+    margin-top: -2rem;
+    z-index: -1;
+    margin-left: 1rem;
+  }
+
+  .kontak .row .box-img .img-sm {
+    display: flex;
+    margin-left: 3rem;
+    margin-top: -3rem;
+  }
+
+  .kontak .row .box-img .img-sm img {
+    padding: 0;
+    margin: 3rem;
+    margin-left: 1.8rem;
+  }
+
+  .kontak .row .box-img .img-sm .sosmed {
+    font-size: 2rem;
+    display: block;
+    margin-top: 3.5rem;
+    margin-left: -10rem;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    transition: 0.5s;
+    height: 18vh;
+    border-radius: 0.5rem;
+  }
+
+  .navbar .navbar-nav.active {
+    right: -10%;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar-nav a:hover {
+    color: #ff6c3f;
+  }
+
+  .navbar-nav a::after {
+    content: "";
+    border-bottom: 0.1rem solid #ff6c3f;
+    padding-bottom: 0.2rem;
+    display: block;
+    transform: scaleX(0);
+    transition: 0.2s;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .kontak {
+    padding-top: 5rem;
+    height: 100vh;
+  }
+
+  .kontak .row {
+    padding-top: 3rem;
+    margin-left: 7rem;
+  }
+
+  .kontak .row .box-img {
+    display: flex;
+    margin-left: -3rem;
+    margin-top: -2rem;
+  }
+
+  .kontak .row .box-img .img-sm {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .kontak .row .box-img .img-sm img {
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+
+  .kontak .row .box-img .img-sm .sosmed {
+    display: block;
+    margin-top: 3.3rem;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    transition: 0.5s;
+    height: 100vh;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .kontak .row .img-cs img {
+    margin-left: 7rem;
+  }
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 20vh;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+
+  .kontak .row {
+    margin-left: -1rem;
+  }
+
+  /* Navbar search form end */
+}
+
+@media screen and (max-width: 414px) {
+  .kontak .row .img-cs img {
+    margin-left: 7rem;
+  }
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 20vh;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+
+  .kontak .row {
+    margin-left: -1rem;
+  }
+
+  /* Navbar search form end */
+}
+@media screen and (max-width: 412px) {
+  .kontak .row .img-cs img {
+    margin-left: 7rem;
+  }
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 20vh;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+
+  .kontak .row {
+    margin-left: -1rem;
+  }
+
+  /* Navbar search form end */
+}
+
+@media screen and (max-width: 375px) {
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 25vh;
+  }
+}

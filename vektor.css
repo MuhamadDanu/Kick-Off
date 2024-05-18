@@ -1,0 +1,2141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Start */
+
+.navbar {
+  display: flex;
+  background-color: rgb(3, 3, 3);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  transition: top 0.3s;
+}
+
+.brand-logo {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.brand-logo span {
+  color: #ff6c3f;
+}
+
+.navbar-nav a {
+  color: #fcf9f9;
+  font-size: 1.6rem;
+  margin: 0 0.6rem;
+  display: inline-block;
+}
+
+.navbar-nav a:hover {
+  color: #ff6c3f;
+}
+
+.navbar-nav a::after {
+  content: "";
+  border-bottom: 0.1rem solid #ff6c3f;
+  padding-bottom: 0.2rem;
+  display: block;
+  transform: scaleX(0);
+  transition: 0.2s;
+}
+
+.navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: white;
+  margin: 0 0.4rem;
+}
+
+#hamburger-menu {
+  display: none;
+}
+/* Navbar End */
+
+/* Navbar search form */
+
+.navbar .search-form {
+  position: absolute;
+  top: 30%;
+  right: 9%;
+  background-color: white;
+  width: 18rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: 0.3s;
+  border-radius: 100%;
+}
+
+.navbar .search-form.active {
+  transform: scaleX(1);
+}
+
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font: 1.6rem;
+  color: black;
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: #000;
+}
+
+/* Navbar search form end */
+
+.box {
+  width: 90%;
+  margin: 2rem auto;
+  margin-top: 7rem;
+  height: 20rem;
+  border: 1px solid black;
+}
+
+.box p {
+  font-size: 10rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.katalog {
+  width: 100%;
+  border-top: 1px solid black;
+  margin-top: 5rem;
+}
+
+.katalog .hadiah {
+  font-size: 4rem;
+  width: 35rem;
+  text-align: center;
+  margin-left: 25rem;
+  background-color: white;
+  margin-top: -3rem;
+}
+
+.container-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+
+.container-row .card {
+  margin: 0 4rem;
+  height: 28rem;
+  background-color: #000000;
+  margin-bottom: 1rem;
+  border: 1px solid black;
+  width: 31rem;
+}
+
+.ket {
+  border: 1px solid black;
+  width: 90%;
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+  margin-left: 4rem;
+}
+
+.ket .keterangan p {
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.ket h1 {
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  margin-left: 1rem;
+}
+
+.container-row .card .box-1 {
+  width: 100%;
+}
+
+.container-row .card-body {
+  margin-top: -0.3rem;
+  background-color: white;
+  padding-bottom: 1rem;
+  border-top: 1px solid black;
+  color: black;
+}
+
+.container-row .card-body h5 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  color: #ff6c3f;
+}
+
+.container-row .card-body p {
+  text-align: center;
+}
+
+.wajah {
+  width: 80%;
+  border-top: 1px solid black;
+  margin-top: 6rem;
+}
+
+.wajah .murah {
+  font-size: 4rem;
+  width: 65rem;
+  margin-top: -3rem;
+  background-color: #fff;
+  margin-left: 10rem;
+  text-align: center;
+}
+
+.container-row-vektor {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.container-row-vektor .card-vektor {
+  margin: 1rem 1rem;
+  height: 18rem;
+  background-color: #000000;
+  margin-bottom: 1rem;
+  border: 1px solid black;
+}
+
+.container-row-vektor .card-vektor .box-2 {
+  width: 100%;
+}
+
+.pesan {
+  width: 40rem;
+  background-color: #ff6c3f;
+  text-align: center;
+  border-radius: 5px;
+  margin: 4rem 22.5rem;
+}
+.pesan a {
+  font-size: 3.5rem;
+  text-align: center;
+  color: white;
+}
+
+/* Footer */
+.credit {
+  background-color: #000;
+  text-align: center;
+  width: 100%;
+}
+
+.credit p {
+  color: white;
+  padding: 0.6rem 0;
+  margin-top: 1rem;
+}
+/* Penutup footer */
+
+/* Media Queris */
+
+/* Laptop */
+
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #ffffff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 19.8vh;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+
+  /* Navbar search form end */
+
+  .box {
+    margin-left: 3rem;
+  }
+
+  .katalog {
+    width: 100%;
+  }
+
+  .katalog .hadiah {
+    margin-left: 6rem;
+  }
+
+  .container-row {
+    width: 95%;
+    margin-left: 1rem;
+  }
+
+  .container-row .card {
+    width: 43%;
+    height: 20.6rem;
+    margin: 1.6rem;
+  }
+
+  .ket {
+    border: 1px solid black;
+    width: 93%;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    margin-left: 1.7rem;
+  }
+
+  .ket .keterangan p {
+    margin: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .ket h1 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+  }
+
+  .wajah {
+    width: 100%;
+  }
+
+  .wajah .murah {
+    margin-left: 15rem;
+    width: 20rem;
+    font-size: 2rem;
+  }
+
+  .container-row-vektor {
+    margin-left: 3.8rem;
+  }
+
+  .container-row-vektor .card-vektor {
+    margin-left: 1.8rem;
+  }
+
+  .pesan {
+    width: 40rem;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 5px;
+    margin: 4rem 5rem;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  .credit {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 19.8vh;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+
+  /* Navbar search form end */
+
+  .box {
+    margin-left: 3rem;
+  }
+
+  .katalog {
+    width: 100%;
+  }
+
+  .katalog .hadiah {
+    margin-left: 5.6rem;
+  }
+
+  .container-row {
+    width: 100%;
+    margin-left: 3rem;
+  }
+
+  .container-row .card {
+    width: 18rem;
+    height: 19.3rem;
+    margin: 1.6rem;
+  }
+
+  .ket {
+    width: 83%;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    margin-left: 1.7rem;
+  }
+
+  .ket .keterangan p {
+    margin: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .ket h1 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+  }
+
+  .wajah {
+    width: 100%;
+  }
+
+  .wajah .murah {
+    margin-left: 13rem;
+    width: 20rem;
+    font-size: 2rem;
+  }
+
+  .container-row-vektor {
+    margin-left: 2rem;
+  }
+
+  .container-row-vektor .card-vektor {
+    margin-left: 1.8rem;
+  }
+
+  .pesan {
+    width: 40rem;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 5px;
+    margin: 4rem 3rem;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  .credit {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 19.8vh;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+
+  /* Navbar search form end */
+
+  .box {
+    margin-left: 3rem;
+  }
+
+  .katalog {
+    width: 100%;
+  }
+
+  .katalog .hadiah {
+    margin-left: 5.6rem;
+  }
+
+  .container-row {
+    width: 100%;
+    margin-left: 3rem;
+  }
+
+  .container-row .card {
+    width: 18rem;
+    height: 19.3rem;
+    margin: 1.6rem;
+  }
+
+  .ket {
+    width: 83%;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    margin-left: 1.7rem;
+  }
+
+  .ket .keterangan p {
+    margin: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .ket h1 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+  }
+
+  .wajah {
+    width: 100%;
+  }
+
+  .wajah .murah {
+    margin-left: 13rem;
+    width: 20rem;
+    font-size: 2rem;
+  }
+
+  .container-row-vektor {
+    margin-left: 2rem;
+  }
+
+  .container-row-vektor .card-vektor {
+    margin-left: 1.8rem;
+  }
+
+  .pesan {
+    width: 40rem;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 5px;
+    margin: 4rem 3rem;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  .credit {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 19.8vh;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+
+  /* Navbar search form end */
+
+  .box {
+    margin-left: 3rem;
+  }
+
+  .katalog {
+    width: 100%;
+  }
+
+  .katalog .hadiah {
+    margin-left: 5.6rem;
+  }
+
+  .container-row {
+    width: 100%;
+    margin-left: 3rem;
+  }
+
+  .container-row .card {
+    width: 18rem;
+    height: 19.3rem;
+    margin: 1.6rem;
+  }
+
+  .ket {
+    width: 83%;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    margin-left: 1.7rem;
+  }
+
+  .ket .keterangan p {
+    margin: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .ket h1 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+  }
+
+  .wajah {
+    width: 100%;
+  }
+
+  .wajah .murah {
+    margin-left: 13rem;
+    width: 20rem;
+    font-size: 2rem;
+  }
+
+  .container-row-vektor {
+    margin-left: 2rem;
+  }
+
+  .container-row-vektor .card-vektor {
+    margin-left: 1.8rem;
+  }
+
+  .pesan {
+    width: 40rem;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 5px;
+    margin: 4rem 3rem;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  .credit {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 19.8vh;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+
+  /* Navbar search form end */
+
+  .box {
+    margin-left: 2.3rem;
+  }
+
+  .katalog {
+    width: 100%;
+  }
+
+  .katalog .hadiah {
+    margin-left: 5.6rem;
+  }
+
+  .container-row {
+    width: 90%;
+    margin-left: 2rem;
+  }
+
+  .container-row .card {
+    width: 18rem;
+    height: 19.3rem;
+    margin: 1.4rem;
+  }
+
+  .ket {
+    width: 90%;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    margin-left: 1.7rem;
+  }
+
+  .ket .keterangan p {
+    margin: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .ket h1 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+  }
+
+  .wajah {
+    width: 100%;
+  }
+
+  .wajah .murah {
+    margin-left: 13rem;
+    width: 20rem;
+    font-size: 2rem;
+  }
+
+  .container-row-vektor {
+    margin-left: 2rem;
+  }
+
+  .container-row-vektor .card-vektor {
+    margin-left: 1.8rem;
+  }
+
+  .pesan {
+    width: 40rem;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 5px;
+    margin: 4rem 3rem;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  .credit {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 406px) {
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 19.8vh;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+
+  /* Navbar search form end */
+
+  .box {
+    margin-left: 2.3rem;
+  }
+
+  .katalog {
+    width: 100%;
+  }
+
+  .katalog .hadiah {
+    margin-left: 5.6rem;
+  }
+
+  .container-row {
+    width: 90%;
+    margin-left: 2rem;
+  }
+
+  .container-row .card {
+    width: 18rem;
+    height: 19.3rem;
+    margin: 1rem;
+  }
+
+  .ket {
+    width: 90%;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    margin-left: 1.2rem;
+  }
+
+  .ket .keterangan p {
+    margin: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .ket h1 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+  }
+
+  .wajah {
+    width: 100%;
+  }
+
+  .wajah .murah {
+    margin-left: 13rem;
+    width: 20rem;
+    font-size: 2rem;
+  }
+
+  .container-row-vektor {
+    margin-left: 2rem;
+  }
+
+  .container-row-vektor .card-vektor {
+    margin-left: 1.8rem;
+  }
+
+  .pesan {
+    width: 40rem;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 5px;
+    margin: 4rem 3rem;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  .credit {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar {
+    width: 100vw;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 19.8vh;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+
+  /* Navbar search form end */
+
+  .box {
+    margin-left: 2rem;
+  }
+
+  .katalog {
+    width: 100%;
+  }
+
+  .katalog .hadiah {
+    margin-left: 4rem;
+  }
+
+  .container-row {
+    width: 90%;
+    margin-left: 2rem;
+  }
+
+  .container-row .card {
+    width: 18rem;
+    height: 19.3rem;
+    margin: 0.9rem;
+  }
+
+  .ket {
+    width: 94%;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+  }
+
+  .ket .keterangan p {
+    margin: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .ket h1 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+  }
+
+  .wajah {
+    width: 100%;
+  }
+
+  .wajah .murah {
+    margin-left: 12rem;
+    width: 20rem;
+    font-size: 2rem;
+  }
+
+  .container-row-vektor {
+    margin-left: 1.2rem;
+  }
+
+  .pesan {
+    width: 40rem;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 5px;
+    margin: 4rem 2rem;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar {
+    width: 100vw;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 19.8vh;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+
+  /* Navbar search form end */
+
+  .box {
+    margin-left: 2rem;
+  }
+
+  .katalog {
+    width: 100%;
+  }
+
+  .katalog .hadiah {
+    margin-left: 4rem;
+  }
+
+  .container-row {
+    width: 90%;
+    margin-left: 2rem;
+  }
+
+  .container-row .card {
+    width: 18rem;
+    height: 19.3rem;
+    margin: 0.9rem;
+  }
+
+  .ket {
+    width: 94%;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+  }
+
+  .ket .keterangan p {
+    margin: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .ket h1 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+  }
+
+  .wajah {
+    width: 100%;
+  }
+
+  .wajah .murah {
+    margin-left: 12rem;
+    width: 20rem;
+    font-size: 2rem;
+  }
+
+  .container-row-vektor {
+    margin-left: 1.2rem;
+  }
+
+  .pesan {
+    width: 40rem;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 5px;
+    margin: 4rem 2rem;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 387px) {
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar {
+    width: 100vw;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 19.8vh;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+
+  /* Navbar search form end */
+
+  .box {
+    margin-left: 2rem;
+  }
+
+  .katalog {
+    width: 100%;
+  }
+
+  .katalog .hadiah {
+    margin-left: 4rem;
+  }
+
+  .container-row {
+    width: 90%;
+    margin-left: 2rem;
+  }
+
+  .container-row .card {
+    width: 18rem;
+    height: 19.3rem;
+    margin: 0.6rem;
+  }
+
+  .ket {
+    width: 94%;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+  }
+
+  .ket .keterangan p {
+    margin: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .ket h1 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+  }
+
+  .wajah {
+    width: 100%;
+  }
+
+  .wajah .murah {
+    margin-left: 12rem;
+    width: 20rem;
+    font-size: 2rem;
+  }
+
+  .container-row-vektor {
+    margin-left: 1.2rem;
+  }
+
+  .pesan {
+    width: 40rem;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 5px;
+    margin: 4rem 2rem;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar {
+    width: 100vw;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #ffffff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 19.8vh;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+
+  /* Navbar search form end */
+
+  .box {
+    margin-left: 2rem;
+  }
+
+  .katalog {
+    width: 100%;
+  }
+
+  .katalog .hadiah {
+    margin-left: 4rem;
+  }
+
+  .container-row {
+    width: 90%;
+    margin-left: 3rem;
+  }
+
+  .container-row .card {
+    width: 17rem;
+    height: 18.6rem;
+    margin: 0.9rem;
+  }
+
+  .ket {
+    width: 92%;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+  }
+
+  .ket .keterangan p {
+    margin: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .ket h1 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+  }
+
+  .wajah {
+    width: 100%;
+  }
+
+  .wajah .murah {
+    margin-left: 12rem;
+    width: 20rem;
+    font-size: 2rem;
+  }
+
+  .container-row-vektor {
+    margin-left: 0rem;
+  }
+
+  .pesan {
+    width: 40rem;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 5px;
+    margin: 2rem 1rem;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 367px) {
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar {
+    width: 100vw;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #ffffff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 19.8vh;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+
+  /* Navbar search form end */
+
+  .box {
+    margin-left: 2rem;
+  }
+
+  .katalog {
+    width: 100%;
+  }
+
+  .katalog .hadiah {
+    margin-left: 4rem;
+  }
+
+  .container-row {
+    width: 90%;
+    margin-left: 3rem;
+  }
+
+  .container-row .card {
+    width: 17rem;
+    height: 18.6rem;
+    margin: 0.4rem;
+  }
+
+  .ket {
+    width: 92%;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+  }
+
+  .ket .keterangan p {
+    margin: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .ket h1 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+  }
+
+  .wajah {
+    width: 100%;
+  }
+
+  .wajah .murah {
+    margin-left: 12rem;
+    width: 20rem;
+    font-size: 2rem;
+  }
+
+  .container-row-vektor {
+    margin-left: 0rem;
+  }
+
+  .pesan {
+    width: 40rem;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 5px;
+    margin: 2rem 1rem;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 55%;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
+  .navbar {
+    width: 100vw;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #ffffff;
+    width: 20rem;
+    transition: 0.5s;
+    height: 19.8vh;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    color: #000;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  /* Navbar search form */
+
+  .navbar .search-form {
+    position: absolute;
+    top: 23%;
+    right: 23%;
+    background-color: white;
+    width: 11rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.3s;
+  }
+
+  .navbar .search-form.active {
+    transform: scaleX(1);
+  }
+
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font: 1.6rem;
+    color: black;
+    padding: 1rem;
+  }
+
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: #000;
+  }
+
+  /* Navbar search form end */
+
+  .box {
+    margin-left: 2rem;
+  }
+
+  .katalog {
+    width: 100%;
+  }
+
+  .katalog .hadiah {
+    margin-left: 4rem;
+  }
+
+  .container-row {
+    width: 90%;
+    margin-left: 2rem;
+  }
+
+  .container-row .card {
+    width: 17rem;
+    height: 18.7rem;
+    margin: 0.7rem;
+  }
+
+  .ket {
+    width: 94%;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+  }
+
+  .ket .keterangan p {
+    margin: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .ket h1 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+  }
+
+  .wajah {
+    width: 100%;
+  }
+
+  .wajah .murah {
+    margin-left: 12rem;
+    width: 20rem;
+    font-size: 2rem;
+  }
+
+  .container-row-vektor {
+    margin-left: 0.4rem;
+  }
+
+  .container-row-vektor .card-vektor {
+    margin: 1rem;
+  }
+
+  .pesan {
+    width: 35rem;
+    background-color: #ff6c3f;
+    text-align: center;
+    border-radius: 5px;
+    margin: 2rem 3rem;
+  }
+  .pesan a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+  }
+}
